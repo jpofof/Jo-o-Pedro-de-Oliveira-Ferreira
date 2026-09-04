@@ -1,10 +1,9 @@
-function App() {
+import Header from './componentes/Header'
+
+  function App() {
   return(
     <div>
-        <header>
-              <h1>Biblioteca João Pedro</h1>
-        </header>
-
+      <Header />
         <main>
           <h2>Bem-vindo à nossa biblioteca</h2>
         
