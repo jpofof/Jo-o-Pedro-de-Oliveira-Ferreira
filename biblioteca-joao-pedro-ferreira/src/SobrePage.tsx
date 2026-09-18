@@ -1,18 +1,22 @@
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
 import Sobre_mim from './componentes/Sobre_mim'
 import Quem_sou_eu from './componentes/Quem_sou_eu'
 import Projetos from './componentes/Projetos'
 
-
-  function App() {
+function SobrePage() {
   return(
     <div>
         <Sobre_mim />
         <Quem_sou_eu />
         <Projetos />
-        
-
     </div>
   )
 }
 
-export default App
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <SobrePage />
+  </StrictMode>,
+)
