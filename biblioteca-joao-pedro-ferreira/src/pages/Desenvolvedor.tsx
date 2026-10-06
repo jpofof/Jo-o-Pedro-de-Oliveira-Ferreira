@@ -1,6 +1,6 @@
 import Sobre_Mim from '../componentes/Sobre_Mim';
 import Projetos from '../componentes/Projetos';
-import Formacao from '../componentes/Formacao'
+import Formacao from '../componentes/Formacao';
 export default function Desenvolvedor() {
     return (
         <div>

@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import CardLivros from '../componentes/CardLivros'
 function App() {
   return (
@@ -67,18 +68,17 @@ function App() {
             <h3 className="text-x1 font-bold text-[#0F172A]
             mb-5">Navegação Ràpida</h3>
             <div className="grid grid-cols-[repeat(auto-fit,minmax((260px,1fr))] gap-5">
-              {/* Novo Atalho para Estudos */}
-              <a href="./Desenvolvedor" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
+              <Link to="/desenvolvedor" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
       <div className="bg-[#EFF6FF] text-[#2563EB] w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0">
         🧑‍💻
       </div>
       <div>
-        <h4 className="text-base font-bold text-[#1E293B] mb-1 mt-0">Cantinho de Estudos</h4>
+        <h4 className="text-base font-bold text-[#1E293B] mb-1 mt-0">Desenvolvedor</h4>
         <p className="text-[13px] text-[#64748B] m-0">
-          Pomodoro, tarefas e dicas</p>
+          Conheça quem fez esse projeto</p>
       </div>
-    </a>
-    <a href="./Estudos" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
+    </Link>
+    <Link to="/estudos" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
       <div className="bg-[#EFF6FF] text-[#2563EB] w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0">
         📖
       </div>
@@ -87,30 +87,8 @@ function App() {
         <p className="text-[13px] text-[#64748B] m-0">
           Pomodoro, tarefas e dicas</p>
       </div>
-    </a>
-    <a href="/recomendacao" className="bg-white p-6
-    rounded-2x1 no-underline shadow-sm border border-
-    [#E2E8f0] flex items-start gap-4 box-border hover:border-
-    [#2563EB] transition-colors">
-      <div className="bg-[#EFF6FF] text-[#2563EB] w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0">
-        ★
-      </div>
-      <div>
-        <h4 className="text-base font-bold text-[#1E293B] mb-1 mt-0">Recomendações</h4>
-        <p className="text-[13px] text-[#64748B] m-0">Descubra novos livros</p>
-      </div>
-    </a>
-    <a href="/acervo" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
-      <div className="bg-[#EFF6FF] text-[#2563EB] w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0">
-        ▣
-      </div>
-      <div>
-        <h4 className="text-base font-bold text-[#1E293B] mb-1 mt-0">Acervo</h4>
-        <p className="text-[13px] text-[#64748B] m-0">Explore nossa coleção</p>
-      </div>
-    </a>
- 
-    <a href="/aulas" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
+    </Link>
+    <Link to="/aulas" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
       <div className="bg-[#EFF6FF] text-[#2563EB] w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0">
         ▸
       </div>
@@ -118,18 +96,7 @@ function App() {
         <h4 className="text-base font-bold text-[#1E293B] mb-1 mt-0">Aulas Mobile</h4>
         <p className="text-[13px] text-[#64748B] m-0">Aprenda desenvolvimento</p>
       </div>
-     
-      </a>
-      <a href="/aulas" className="bg-white p-6 rounded-2xl no-underline shadow-sm border border-[#E2E8F0] flex items-start gap-4 box-border hover:border-[#2563EB] transition-colors">
-      <div className="bg-[#EFF6FF] text-[#2563EB] w-11 h-11 rounded-xl flex items-center justify-center text-xl shrink-0">
-       🖥️
-      </div>
-      <div>
-        <h4 className="text-base font-bold text-[#1E293B] mb-1 mt-0">Aulas Web</h4>
-        <p className="text-[13px] text-[#64748B] m-0">Aprenda desenvolvimento em Web</p>
-      </div>
-     
-      </a>
+      </Link>
     </div>
     </section>
      <section className="mb-12">
